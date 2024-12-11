@@ -15,6 +15,7 @@ import java.util.Optional;
 public class CoffeeController {
 
     private final CoffeeService coffeeService;
+    private final UserService userService;
 
     @Autowired
     public CoffeeController(CoffeeService coffeeService, UserService userService) {
