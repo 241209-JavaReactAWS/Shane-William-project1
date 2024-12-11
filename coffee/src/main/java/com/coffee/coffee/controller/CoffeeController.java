@@ -17,9 +17,10 @@ public class CoffeeController {
     private final CoffeeService coffeeService;
 
     @Autowired
-    public CoffeeController(CoffeeService coffeeService) {
-        this.coffeeService = coffeeService;
+    public CoffeeController(CoffeeService coffeeService, UserService userService) {
+        this.userService = userService;
     }
+
 
     // Create a new coffee
     @PostMapping
