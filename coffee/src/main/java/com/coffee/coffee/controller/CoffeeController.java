@@ -18,6 +18,7 @@ public class CoffeeController {
 
     @Autowired
     public CoffeeController(CoffeeService coffeeService, UserService userService) {
+        this.coffeeService = coffeeService;
         this.userService = userService;
     }
 
