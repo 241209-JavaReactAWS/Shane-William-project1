@@ -1,8 +1,9 @@
 package com.coffee.coffee.repository;
 
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import com.coffee.coffee.entity.User;
+import com.coffee.coffee.model.User;
 import org.springframework.stereotype.Repository;
 import java.util.*;
 

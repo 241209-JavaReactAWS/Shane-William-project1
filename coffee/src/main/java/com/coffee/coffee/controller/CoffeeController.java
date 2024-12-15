@@ -1,7 +1,7 @@
 package com.coffee.coffee.controller;
 
-import com.coffee.coffee.model.Coffee;
-import com.coffee.coffee.service.CoffeeService;
+import com.coffee.coffee.model.*;
+import com.coffee.coffee.service.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,12 @@ import java.util.Optional;
 public class CoffeeController {
 
     private final CoffeeService coffeeService;
+    private final UserService userService;
 
     @Autowired
     public CoffeeController(CoffeeService coffeeService, UserService userService) {
         this.coffeeService = coffeeService;
+        this.userService = userService;
     }
 
     // Create a new coffee

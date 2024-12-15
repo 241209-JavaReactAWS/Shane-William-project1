@@ -1,7 +1,7 @@
-package com.coffee.coffee.Service;
+package com.coffee.coffee.service;
 import org.springframework.stereotype.Service;
 import com.coffee.coffee.repository.UserRepository;
-import com.coffee.coffee.entity.User;
+import com.coffee.coffee.model.User;
 
 
 public class UserService {
@@ -21,6 +21,6 @@ public class UserService {
         return userRepository.findByUsernameAndPassword(username, password).orElse(null);
     }
 
-    public User
+
 
 }

@@ -1,8 +1,9 @@
-package com.coffee.coffee.entity;
-import javax.persistence.*;
+package com.coffee.coffee.model;
+
+import jakarta.persistence.*;
 
 @Entity
-@Table(name ="user")
+@Table(name = "user")
 public class User {
 
     @Column(name="userId")
@@ -11,28 +12,29 @@ public class User {
     private Integer userId;
 
     /*
-    User field for username login credential.
+     * User field for username login credential.
      */
-    @Column(name="username")
+    @Column(name = "username")
     private String username;
 
     /*
-    User field for password login credential.
+     * User field for password login credential.
      */
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
 
     /*
-    User field for admin status.
+     * User field for admin status.
      */
 
-    @Column(name="authority")
+    @Column(name = "authority")
     private boolean authority;
 
     /*
-    Default no args constructor
+     * Default no args constructor
      */
-    public User() {}
+    public User() {
+    }
 
     public User(String username, String password, boolean authority) {
         this.username = username;
@@ -48,7 +50,9 @@ public class User {
         this.userId = userId;
     }
 
-    public String getUsername() { return this.username; }
+    public String getUsername() {
+        return this.username;
+    }
 
     public void setUsername(String username) {
         this.username = username;
@@ -62,7 +66,11 @@ public class User {
         this.password = password;
     }
 
-    public boolean getAuthority() { return authority; }
+    public boolean getAuthority() {
+        return authority;
+    }
 
-    public void setAuthority(boolean authority) { this.authority = authority;}
+    public void setAuthority(boolean authority) {
+        this.authority = authority;
+    }
 }
