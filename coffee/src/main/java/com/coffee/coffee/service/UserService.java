@@ -3,7 +3,7 @@ import org.springframework.stereotype.Service;
 import com.coffee.coffee.repository.UserRepository;
 import com.coffee.coffee.model.User;
 
-
+@Service
 public class UserService {
 
     UserRepository userRepository;
@@ -12,14 +12,14 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User register(User newUser) {
-        return userRepository.save(newUser);
+   // public User register(User newUser) {
+     //   return userRepository.save(newUser);
 
-    }
+    //}
 
-    public User login(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, password).orElse(null);
-    }
+    //public User login(String username, String password) {
+      //  return userRepository.findByUsernameAndPassword(username, password).orElse(null);
+    //}
 
 
 

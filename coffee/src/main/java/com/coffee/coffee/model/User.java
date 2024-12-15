@@ -3,12 +3,12 @@ package com.coffee.coffee.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "user")
+@Table(name = "userbuyer")
 public class User {
 
     @Column(name="userId")
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
 
     /*

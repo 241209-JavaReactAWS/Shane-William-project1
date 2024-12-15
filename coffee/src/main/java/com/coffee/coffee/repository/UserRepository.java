@@ -9,9 +9,9 @@ import java.util.*;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Integer> {
-    public Optional<User> findByUsername(String username);
-    public Optional<User> findByUsernameAndPassword(String username, String password);
+   // public Optional<User> findByUsername(String username);
+    //public Optional<User> findByUsernameAndPassword(String username, String password);
 
-    @Query("SELECT u FROM user WHERE u.authority = true ")
-    public Optional<User> findAdmin();
+    //@Query("SELECT u FROM user WHERE u.authority = true ")
+    //public Optional<User> findAdmin();
 }

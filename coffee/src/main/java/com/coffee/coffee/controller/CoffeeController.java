@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:5500", "http://127.0.0.1:5500"})
 @RequestMapping("/api/coffee")
 public class CoffeeController {
 

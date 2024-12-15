@@ -20,41 +20,10 @@
   </header>
   <body class="bg-success bg-gradient">
   
-    <form >
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Coffee</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Quantity</label>
-          <input  class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Description</label>
-            <input  class="form-control" id="inputPassword4">
-          </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Create/update</button>
-          <br>
-          <br>
-          <button type="submit" class="btn btn-danger">Delete</button>
-        </div>
-      </form>
-    <table class="table table-striped table-dark">
-        <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Quantity</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Black coffee</td>
-    <td>22ml</td>
-    <td>A really strong coffee</td>
-  </tr>
-  
-      </table>
+    <div id="coffee-list" class="container mt-4 row"></div>
+
+    <!-- Include your JavaScript file -->
+    <script src="bootstrap-5.3.3-dist\apiCoffeeFetch.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
