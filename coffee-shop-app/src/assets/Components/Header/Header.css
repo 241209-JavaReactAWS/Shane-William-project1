@@ -1,0 +1,41 @@
+.mocha{
+    background-color: rgba(66, 37, 1);
+}
+.mochaa{
+    background-color: rgb(101, 56, 1, 0.9);
+}
+.moch{
+    background-color:rgb(133, 67, 1);
+}
+body{
+    background-color:rgb(171, 132, 93);
+    background-size: cover;
+}
+.new_font{
+    color:white;
+    font-family: 'Georgia', serif;
+    color:white;
+}
+.nav-item {
+    color: white !important;
+}
+.navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: rgba(66, 37, 1); 
+    color: white; 
+    text-align: left; 
+    z-index: 10; 
+    padding: 1rem; 
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white !important; 
+    text-decoration: none; 
+  }
+  
+  .navbar-brand:hover, .nav-link:hover {
+    color: #f1c40f !important; 
+  }
