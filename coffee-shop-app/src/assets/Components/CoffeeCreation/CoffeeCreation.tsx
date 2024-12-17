@@ -1,8 +1,8 @@
-import './CoffeeCreation.css'
+import './CoffeeCreation.css';
 
 function CoffeeCreation() {
   return (
-    <body >
+    <main>
     
     <div className="container min-vh-100 d-flex justify-content-center align-items-center new_font col-md-6">
         <div className ="row gy-3">
@@ -52,12 +52,12 @@ function CoffeeCreation() {
                 <label htmlFor="exampleInputPassword1" className="form-label">Description</label>
                 <input type="password" className="form-control" id="exampleInputPassword1"/>
             </div>
-            <button type="submit" className="btn btn-primary">Create Coffee</button>
+            <button type="submit" className="btn btn-primary">Create/Edit Coffee</button>
             <button type="submit" className="btn btn-danger">Delete Coffee</button>
         </form>
         </div>
 
-</body>
+</main>
   )
 }
 

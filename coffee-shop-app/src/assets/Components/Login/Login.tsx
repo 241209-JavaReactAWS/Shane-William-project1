@@ -1,6 +1,7 @@
 
 import './Login.css'
 function Login() {
+
   return (
     <body id='adasdsada'>
     
@@ -14,8 +15,9 @@ function Login() {
         <div className="mb-3">
         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
         <input type="password" className="form-control" id="exampleInputPassword1"/>
-        </div>
+        <br/>
         <button type="submit" className="btn moch new_font">Log in</button>
+        </div>
     </form>
 </div>
 </body>
