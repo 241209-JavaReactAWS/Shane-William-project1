@@ -1,6 +1,6 @@
 
-import { BrowserRouter } from 'react-router-dom'
 import './App.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import CoffeeCreation from './assets/Components/CoffeeCreation/CoffeeCreation'
 import Header from './assets/Components/Header/Header'
 import Index from './assets/Components/Index/Index'
@@ -14,13 +14,18 @@ function App() {
 //<UserCreation></UserCreation>
 //<Menu></Menu>
   return (
-    
-    <BrowserRouter> 
-    <Header></Header>
-    
-    <CoffeeCreation></CoffeeCreation>
-    
-    </BrowserRouter>
+    <>
+    <Router>
+      <Header /> {/* Header is always visible on all pages */}
+      <Routes>
+        <Route path="/" element={<Index/>} /> {/* Renders Index component for the home page */}
+        <Route path="/login" element={<Login/>} /> {/* Renders Login component */}
+        <Route path="/menu" element={<Menu/>} /> {/* Renders Menu component */}
+        <Route path="/admin" element={<CoffeeCreation/>} /> {/* Renders CoffeeCreation component */}
+        <Route path="/createaccount" element={<UserCreation/>} /> {/* Renders UserCreation component */}
+      </Routes>
+    </Router>
+    </>
   )
 }
 
