@@ -30,6 +30,7 @@ public class CoffeeController {
     public ResponseEntity<Coffee> createCoffee(@RequestBody Coffee coffee) {
         boolean exists = coffeeService.coffeeExists(coffee);
 
+
         if (exists) {
             return ResponseEntity.badRequest().build();
         }
