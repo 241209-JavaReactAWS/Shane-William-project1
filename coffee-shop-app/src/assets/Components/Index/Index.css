@@ -19,3 +19,7 @@ body{
 .nav-item {
     color: white !important;
 }
+
+.abc {
+    background-image:url('coffee-shop.gif'); 
+}

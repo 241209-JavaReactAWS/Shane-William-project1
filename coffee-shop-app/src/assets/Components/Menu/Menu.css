@@ -7,6 +7,7 @@
 .moch{
     background-color:rgb(133, 67, 1);
 }
+
 body{
     background-image:url('coffee-shop.gif');
     background-size: cover;
@@ -18,4 +19,8 @@ body{
 }
 .nav-item {
     color: white !important;
+}
+
+.abc {
+    background-image:url('coffee-shop.gif'); 
 }
