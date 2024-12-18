@@ -4,6 +4,7 @@ import com.coffee.coffee.model.*;
 import com.coffee.coffee.service.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,8 +28,14 @@ public class CoffeeController {
     // Create a new coffee
     @PostMapping
     public ResponseEntity<Coffee> createCoffee(@RequestBody Coffee coffee) {
+        boolean exists = coffeeService.coffeeExists(coffee);
+
+        if (exists) {
+            return ResponseEntity.badRequest().build();
+        }
+
         Coffee createdCoffee = coffeeService.createCoffee(coffee);
-        return ResponseEntity.ok(createdCoffee);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdCoffee);
     }
 
     // Get all coffees

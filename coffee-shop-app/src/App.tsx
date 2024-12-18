@@ -1,4 +1,5 @@
 
+import { BrowserRouter } from 'react-router-dom'
 import './App.css'
 import CoffeeCreation from './assets/Components/CoffeeCreation/CoffeeCreation'
 import Header from './assets/Components/Header/Header'
@@ -13,10 +14,13 @@ function App() {
 //<UserCreation></UserCreation>
 //<Menu></Menu>
   return (
-    <>
+    
+    <BrowserRouter> 
     <Header></Header>
+    
     <CoffeeCreation></CoffeeCreation>
-    </>
+    
+    </BrowserRouter>
   )
 }
 

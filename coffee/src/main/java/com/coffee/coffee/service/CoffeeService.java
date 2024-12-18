@@ -44,6 +44,11 @@ public class CoffeeService {
                 .orElse(false);
     }
 
+    // Find if coffee exists
+    public boolean coffeeExists(Coffee coffee) {
+        return coffeeRepository.findByName(coffee.getName()).isPresent();
+    }
+
     // Update the quantity of the coffee
     public boolean updateCoffeeQuantity(Integer id, Integer newQuantity) {
         return coffeeRepository.findById(id)
