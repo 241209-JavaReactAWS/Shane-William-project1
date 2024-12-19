@@ -49,6 +49,8 @@ public class CoffeeService {
         return coffeeRepository.findByName(coffee.getName()).isPresent();
     }
 
+
+
     // Update the quantity of the coffee
     public boolean updateCoffeeQuantity(Integer id, Integer newQuantity) {
         return coffeeRepository.findById(id)
